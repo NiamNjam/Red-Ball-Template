@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        transform.localScale = Vector3.MoveTowards(transition.localScale, targetScale, 60 * Time.deltaTime);
+        transition.localScale = Vector3.MoveTowards(transition.localScale, targetScale, 60 * Time.deltaTime);
     }
     public void Win()
     {
