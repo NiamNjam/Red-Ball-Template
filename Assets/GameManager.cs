@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this);
         }
+        Application.targetFrameRate = 60;
     }
 
     private void Update()

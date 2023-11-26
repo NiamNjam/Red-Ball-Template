@@ -21,7 +21,7 @@ public class Ball : MonoBehaviour
     void Update()
     {
         var hor = Input.GetAxisRaw("Horizontal");
-        rb.AddForce(new Vector2(hor,0) * moveForce);
+        rb.AddForce(new Vector2(hor,0) * moveForce * Time.deltaTime);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
